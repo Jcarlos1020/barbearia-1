@@ -371,6 +371,11 @@
     }
 }
 
+.contato-info{
+
+    color: $white-normal;
+}
+
 @media screen and (max-width: 940px) {
 
     .contatos-container {
@@ -434,7 +439,7 @@
 
         h2 {
 
-            font-size: 17px;
+            font-size: 12px;
             padding: 20px;
 
 
