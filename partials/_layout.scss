@@ -249,6 +249,7 @@
     padding: 50px 0;
     gap: 25px;
     color: $white-normal;
+    margin-top: 30px;
 
 }
 
@@ -331,4 +332,115 @@
     to {
         transform: translatey(-8px) scale(1.1);
     }
+}
+
+
+.contatos-container {
+
+    img {
+        max-width: 40px;
+        border-radius: 5px;
+
+    }
+
+    width: 65%;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+
+    .contato {
+        p {
+            flex-direction: center;
+            align-items: center;
+            font-size: 11px;
+            color: $white-normal;
+
+        }
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .contatos-container {
+
+        img {
+            max-width: 35px;
+            border-radius: 5px;
+
+        }
+
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .contato {
+            gap: 16px;
+            padding: 30px;
+
+        }
+    }
+}
+
+.desenvolvedor {
+
+    h2 {
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+
+    }
+
+
+}
+
+.desenvolvedor a:hover {
+    h2 {
+        animation: translatey 0.8s infinite alternate;
+        color: $red-light;
+
+    }
+}
+
+@keyframes translatey {
+    from {
+        transform: translatey(0) scale(1);
+    }
+
+    to {
+        transform: translatey(-5px) scale(1);
+    }
+}
+
+
+@media screen and (max-width: 940px) {
+
+    .desenvolvedor {
+        
+
+        h2 {
+
+            font-size: 17px;
+            padding: 20px;
+
+
+        }
+
+
+    }
+
 }

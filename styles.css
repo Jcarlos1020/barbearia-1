@@ -418,6 +418,7 @@ i {
   padding: 50px 0;
   gap: 25px;
   color: #ffff;
+  margin-top: 30px;
 }
 
 .footer-icons {
@@ -496,6 +497,111 @@ i {
   to {
     -webkit-transform: translatey(-8px) scale(1.1);
             transform: translatey(-8px) scale(1.1);
+  }
+}
+
+.contatos-container {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contatos-container img {
+  max-width: 40px;
+  border-radius: 5px;
+}
+
+.contatos-container .contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.contatos-container .contato p {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+  color: #ffff;
+}
+
+@media screen and (max-width: 940px) {
+  .contatos-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contatos-container img {
+    max-width: 35px;
+    border-radius: 5px;
+  }
+  .contatos-container .contato {
+    gap: 16px;
+    padding: 30px;
+  }
+}
+
+.desenvolvedor h2 {
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.desenvolvedor a:hover h2 {
+  -webkit-animation: translatey 0.8s infinite alternate;
+          animation: translatey 0.8s infinite alternate;
+  color: #d34040;
+}
+
+@keyframes translatey {
+  from {
+    -webkit-transform: translatey(0) scale(1);
+            transform: translatey(0) scale(1);
+  }
+  to {
+    -webkit-transform: translatey(-5px) scale(1);
+            transform: translatey(-5px) scale(1);
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .desenvolvedor h2 {
+    font-size: 17px;
+    padding: 20px;
   }
 }
 
