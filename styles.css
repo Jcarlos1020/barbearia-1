@@ -523,6 +523,7 @@ i {
 }
 
 .contatos-container .contato {
+  color: #ffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
